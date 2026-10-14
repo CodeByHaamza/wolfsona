@@ -1,0 +1,39 @@
+# Dépendances
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Tests
+coverage/
+.vitest/
+playwright-report/
+test-results/
+
+# Environnement — ne JAMAIS commiter de secrets
+.env
+.env.*
+!.env.example
+
+# Assets sous licence (voir docs/ASSETS.md)
+/assets/arcanes/*
+!/assets/arcanes/.gitkeep
+!/assets/arcanes/README.md
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Éditeurs / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*~

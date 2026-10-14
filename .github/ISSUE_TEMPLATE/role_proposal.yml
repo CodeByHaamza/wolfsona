@@ -1,0 +1,47 @@
+name: 🃏 Nouveau rôle (arcane)
+description: Proposer un rôle pour l'un des arcanes encore libres
+labels: [role, design]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Les arcanes déjà pris et ceux encore libres sont listés dans
+        [`docs/ARCANES.md`](../../docs/ARCANES.md). Un rôle n'est pas retenu
+        sur son originalité, mais sur ce qu'il fait au **débat**.
+  - type: input
+    id: arcana
+    attributes:
+      label: Arcane
+      placeholder: 'XX — Le Jugement'
+    validations: { required: true }
+  - type: dropdown
+    id: camp
+    attributes:
+      label: Camp
+      options: [Village, Loups, Solitaire]
+    validations: { required: true }
+  - type: textarea
+    id: power
+    attributes:
+      label: Le pouvoir, en une phrase
+    validations: { required: true }
+  - type: dropdown
+    id: when
+    attributes:
+      label: Quand agit-il ?
+      options: [La nuit, Le jour, À sa mort, En continu, Une seule fois dans la partie]
+    validations: { required: true }
+  - type: textarea
+    id: why-arcana
+    attributes:
+      label: Pourquoi cet arcane et pas un autre ?
+      description: Le lien thématique est le critère principal. Un pouvoir qui ne parle pas à son arcane sera refusé.
+    validations: { required: true }
+  - type: textarea
+    id: balance
+    attributes:
+      label: En quoi ça change le débat
+      description: |
+        Un rôle qui donne une information certaine tue la discussion.
+        À quel nombre de joueurs ce rôle devient-il trop fort ou inutile ?
+    validations: { required: true }

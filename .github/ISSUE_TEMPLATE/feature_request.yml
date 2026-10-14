@@ -1,0 +1,19 @@
+name: ✨ Fonctionnalité
+description: Une idée pour améliorer le jeu
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Le problème
+      description: Quelle gêne concrète cette idée résout-elle ? Décris la situation, pas la solution.
+    validations: { required: true }
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ce que tu proposes
+    validations: { required: true }
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Ce que tu as envisagé d'autre

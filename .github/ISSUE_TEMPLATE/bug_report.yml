@@ -1,0 +1,38 @@
+name: 🐛 Bug
+description: Quelque chose ne marche pas comme prévu
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Ce qui s'est passé
+      description: Et ce que tu attendais à la place.
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes:
+      label: Comment le reproduire
+      placeholder: |
+        1. Créer une partie à 7 joueurs
+        2. Donner le rôle La Tour à ...
+        3. ...
+    validations: { required: true }
+  - type: input
+    id: game-id
+    attributes:
+      label: Identifiant de partie
+      description: Visible en bas de l'écran de jeu. Il nous permet de retrouver le journal serveur.
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Pendant quelle phase ?
+      options: [Salon d'attente, Nuit, Jour (débat), Vote, Fin de partie, Hors partie]
+    validations: { required: true }
+  - type: input
+    id: players
+    attributes:
+      label: Nombre de joueurs
+  - type: textarea
+    id: context
+    attributes:
+      label: Navigateur, appareil, et tout ce qui peut aider
